@@ -1,0 +1,18 @@
+//SQL-1 Task 9.1
+Inner join : -
+An INNER JOIN is a type of JOIN operation in SQL that combines rows from two or more tables based on a related column. It returns only the rows where there is a match 
+between the columns of the specified tables. If there is no matching row in any of the tables, those rows will not be included in the result.
+
+Outer Join : -
+An OUTER JOIN is a type of JOIN operation in SQL that returns all the rows from one table and the matching rows from the other table(s). If there is no match for a row
+in one of the tables the result set will contain NULL values for columns coming from the table with no match.
+
+Left inner join:-
+its a combination of a LEFT JOIN and an INNER JOIN. It behaves like a LEFT JOIN retrieving all the rows from the left table and the matching rows from the right table.
+However unlike a regular LEFT JOIN it only includes the rows where there is a match in the right table.
+
+Right Outer join:-
+A RIGHT OUTER JOIN, also known as a RIGHT JOIN or RIGHT OUTER JOIN is another type of JOIN operation in SQL. It works similarly to a LEFT OUTER JOIN
+but the roles of the tables are reversed. In a RIGHT OUTER JOIN all the rows from the right table are included in the result set along with the matching rows 
+from the left table based on the specified join condition. If there is no match for a row from the right table in the left table the result will contain NULL 
+values for the columns of the left table

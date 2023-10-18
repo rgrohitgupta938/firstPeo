@@ -1,0 +1,27 @@
+{
+  "projects": {
+    "default": "furntur-5807a",
+    "secC": "section-a-9f6d2",
+    "secA": "myfirstproj-53bbf",
+    "secd": "sectiond-26d43",
+    "Task1": "task1-daf43",
+    "stat": "ertsgj-10422",
+    "emp\\": "empsys-d1e2b",
+    "mob": "mobilesys-4c417",
+    "shop": "shopinga-5d920",
+    "ShFil": "shopfilebased",
+    "shpDB": "shopapp-463b6",
+    "ShFb": "shopfilebased",
+    "shDB": "shopapp-463b6",
+    "shfile": "shopfilebased",
+    "prod": "prodapp-1602e",
+    "emp": "empman-5fa23",
+    "bank": "bankapp-6c795",
+    "manage": "managesys-f4fc5",
+    "test": "testapp-551ff",
+    "post": "postman-19e13",
+    "furn": "furntur-5807a"
+  },
+  "targets": {},
+  "etags": {}
+}

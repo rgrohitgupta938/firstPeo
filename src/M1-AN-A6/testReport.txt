@@ -1,0 +1,13 @@
+﻿Purpose of the document
+This document explains the various activities performed as part of the Testing of the ‘Football tournament’ react application
+
+
+Application Overview
+Football tournament is a React App which is used to display product details in tabular form with other Functionalities.
+Testing Scope
+1. In Scope
+2. Out of Scope
+In-Scope  : Functional Testing for the component are in Scope of Testing
+Out of Scope: Performance Testing was not done for this application
+Functionalities
+Football tournaments have one nav bar which shows no of matches played in total.then three buttons to start new match check points table of all teams and all matches to check who won the last match or before that points table displays all the teams past score goals and matches won and lost

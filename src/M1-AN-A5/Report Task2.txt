@@ -1,0 +1,23 @@
+﻿Purpose of the document
+This document explains the various activities performed as part of the Testing of the ‘Quiz Game’ web application
+
+
+Application Overview
+Quiz game is a web based application for Quiz .There are four players in the game and one winner with maximum points or tie between players if maximum points are the same.Every players have a buzzer buzzer need to be active to be able to give an answer.
+Testing Scope
+1. In Scope
+2. Out of Scope
+In-Scope  : Functional Testing for the component are in Scope of Testing
+Out of Scope: Performance Testing was not done for this application
+Functionalities
+Quiz game have a Buzzer button for players to respond to who is going to give an answer to a given question and color of that player column is going to changed to green  .Question have Four options and One f them is correct if a player gives a correct answer than that player will get 3 points if answer is wrong than that player will get -1 points.Quiz have total of 6 Questions after last question winner is decided upon individual points.
+
+
+
+
+
+
+
+
+Errors and Defects
+* If the buzzer button is not pressed we will get undefined value of name of player which will lead to runtime error.

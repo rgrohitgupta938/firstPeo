@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript" src="Task1(a).js"></script>
+</head>
+<body>
+    <script>
+        const jsonData = [
+  { code: "A101", price: 150 },
+  { code: "A452", price: 450 },
+  { code: "B671", price: 52 },
+  { code: "H887", price: 17 },
+  { code: "V693", price: 188 },
+  { code: "A645", price: 306 },
+  { code: "J034", price: 109 },
+  { code: "N299", price: 75 },
+  { code: "M472", price: 250 },
+  { code: "R077", price: 300 },
+  { code: "B297", price: 150 },
+  { code: "A489", price: 160 },
+  { code: "A507", price: 25 },
+  { code: "K563", price: 45 },
+  { code: "M833", price: 80 },
+  { code: "T672", price: 100 },
+  { code: "B934", price: 200 }
+];
+
+//const condition = '>100';
+//const condition = '35-80';
+const condition = '<100';
+function filterByPrice(condition, jsonData) {
+  let filteredData = [];
+
+  const operator = !condition.includes("-") ? condition.substring(0, 1) : "-";
+  console.log(operator);
+  const values = operator !== "-" ? condition.substring(1).split('-').map(Number) : condition.split('-');
+  console.log(values);
+
+  filteredData = jsonData.filter(item => {
+    const price = item.price;
+
+    switch (operator) {
+      case '>':
+        return price > values[0];
+      case '<':
+        return price < values[0];
+      case '-':
+        return price >= values[0] && price <= values[1];
+      default:
+        return false;
+    }
+  });
+
+  return filteredData;
+}
+const filteredArray = filterByPrice(condition, jsonData);
+console.log(filteredArray);
+    </script>
+</body>
+</html>

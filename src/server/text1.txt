@@ -1,0 +1,46 @@
+/// ND-B1#2 task 1.1(d)
+a callback function is a function that is passed as an argument to another function and is intended to be executed later or in response to an event. 
+Callback functions are commonly used in asynchronous operations where the order of execution is not guaranteed or when you want to handle events or 
+responses in a specific way
+
+/// ND-B1#2 task 1.1(e)
+
+first parameter in callback function is err. err, is used to pass any error that might occur during the file operation. value denote is null or undefined if operation 
+is succesfull err is null or undefined
+
+////// ND-B1#2 task 1.1(f)
+ You can initiate multiple file operations in parallel, and the program will not wait for each operation to finish before continuing with other tasks. 
+ This approach leads to more responsive applications and errors in asynchronous code are handled by callback function so applications doesnt crash in operations
+ Async ex :-
+ let fs = require('fs');
+function readFileAsync() {
+  fs.readFile('text2.txt', 'utf8', (err, data) => {
+    if (err) {
+      console.error('Error reading file:', err);
+      return;
+    }
+    console.log('File content:', data);
+  });
+}
+console.log('Before file read');
+readFileAsync();
+console.log('After file read');
+output : -
+Before file read
+After file read
+File content: sdfsdbfvvsdhgafdhf
+
+sync ex :-
+let fs = require('fs');
+function readFileSync() {
+  const data = fs.readFileSync('example.txt', 'utf8');
+  console.log('File content:', data);
+}
+console.log('Before file read');
+readFileSync();
+console.log('After file read');
+output :-
+Before file read
+File content: This is the content of the example file.
+After file read
+

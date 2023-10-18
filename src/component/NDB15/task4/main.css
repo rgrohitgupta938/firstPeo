@@ -1,0 +1,23 @@
+.select-container {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-select {
+  padding-right: 30px;
+}
+
+.dropdown-arrow-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.dropdown-arrow-icon1 {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}

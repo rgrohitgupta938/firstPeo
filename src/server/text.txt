@@ -1,0 +1,19 @@
+//ND-B1#3 task1.1 (d)
+express middleware is a fundamental concept in the Express.js web application framework for Node.js. middleware functions are functions that have access to the request
+(req), response (res) and next middleware function in the application's request-response cycle.
+they can be used for various purposes such as handling authentication, logging, error handling, parsing request bodies and more. middleware functions can be configured
+globally for the entire application or applied to specific routes.
+//ND-B1#3 task1.1 (f)
+middleware functions are defined with three parameters: req, res, and next.
+req: represents the incoming HTTP request.it contains information about the clients request such as headers,parameters,query strings and request body.
+res: represents the HTTP response that will be sent back to the client. middleware can use this object to send data and manage the response.
+next: a function that signals that the current middleware has completed its task and the application should move on to the next middleware in the stack.
+calling next() triggers the execution of the subsequent middleware.if you do not call next() the request-response cycle will be stuck and the clients request will 
+not proceed further
+//ND-B1#3 task1.1 (g)
+the order of execution in the middleware stck is determined by the sequence in which middleware functions are added to the application using the app.use().
+//ND-B1#3 task1.1 (h)
+there are two main ways to configure middleware using app.use():
+global Middleware: you can add middleware functions that are executed on every request regardless of the route. These are often used for tasks like logging,
+parsing request bodies, setting headers, etc.
+route-Specific Middleware: you can add middleware functions that are executed only for specific routes. This allows you to customize behavior for specific routes

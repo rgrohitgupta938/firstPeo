@@ -1,0 +1,26 @@
+.label {
+  color: grey;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.label:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.active {
+  background-color: lightgrey;
+  color: black;
+}
+.cart-pill {
+  background-color: green;
+  color: white;
+  font-size: 12px;
+  border-radius: 100%;
+  padding: 4px 8px;
+  position: absolute;
+  top: 15px;
+  right: 5px;
+}
